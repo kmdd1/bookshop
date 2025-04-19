@@ -1,0 +1,12 @@
+C:\Users\Kim\Desktop\bookshop\bookshop\bin\Release\bookshop.exe.config
+C:\Users\Kim\Desktop\bookshop\bookshop\bin\Release\bookshop.exe
+C:\Users\Kim\Desktop\bookshop\bookshop\bin\Release\bookshop.pdb
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.csproj.AssemblyReference.cache
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.Form1.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.Form2.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.Properties.Resources.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.UserControl1.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.csproj.GenerateResource.cache
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.csproj.CoreCompileInputs.cache
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.exe
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Release\bookshop.pdb

@@ -3,10 +3,11 @@ C:\Users\Kim\Desktop\bookshop\bookshop\bin\Debug\bookshop.exe
 C:\Users\Kim\Desktop\bookshop\bookshop\bin\Debug\bookshop.pdb
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.csproj.AssemblyReference.cache
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Form1.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Form2.resources
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Properties.Resources.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.UserControl1.resources
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.csproj.GenerateResource.cache
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.csproj.CoreCompileInputs.cache
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.exe
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.pdb
-C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.UserControl1.resources
-C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Form2.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Form3.resources
