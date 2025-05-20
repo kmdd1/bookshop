@@ -20,7 +20,7 @@ namespace bookshop
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            Form2 DashboardForm = new Form2();
+            Dashboard DashboardForm = new Dashboard();
             DashboardForm.Show();
 
             this.Hide();
@@ -33,7 +33,7 @@ namespace bookshop
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            Form2 DashboardForm = new Form2();
+            Dashboard DashboardForm = new Dashboard();
             DashboardForm.Show();
 
             this.Hide();
@@ -41,7 +41,7 @@ namespace bookshop
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Form1 LoginForm = new Form1();
+            SignIn LoginForm = new SignIn();
             LoginForm.Show();
 
             this.Hide();
@@ -49,7 +49,7 @@ namespace bookshop
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Form1 LoginForm = new Form1();
+            SignIn LoginForm = new SignIn();
             LoginForm.Show();
 
             this.Hide();
