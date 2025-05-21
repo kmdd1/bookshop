@@ -71,6 +71,7 @@
             this.EditButton.TabIndex = 50;
             this.EditButton.Text = "SAVE";
             this.EditButton.UseVisualStyleBackColor = false;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // label5
             // 

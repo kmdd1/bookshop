@@ -1,13 +1,13 @@
 ﻿namespace bookshop
 {
-    partial class Dashboard
+    partial class Customers
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,26 +20,18 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainpanel = new System.Windows.Forms.Panel();
+            this.bookpanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.payments = new System.Windows.Forms.TextBox();
-            this.orders = new System.Windows.Forms.TextBox();
-            this.customers = new System.Windows.Forms.TextBox();
-            this.books = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,165 +42,69 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.mainpanel.SuspendLayout();
+            this.bookpanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mainpanel
+            // bookpanel
             // 
-            this.mainpanel.Controls.Add(this.panel2);
-            this.mainpanel.Controls.Add(this.panel1);
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(0, 0);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1358, 621);
-            this.mainpanel.TabIndex = 2;
+            this.bookpanel.Controls.Add(this.panel2);
+            this.bookpanel.Controls.Add(this.panel1);
+            this.bookpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookpanel.Location = new System.Drawing.Point(0, 0);
+            this.bookpanel.Name = "bookpanel";
+            this.bookpanel.Size = new System.Drawing.Size(1358, 621);
+            this.bookpanel.TabIndex = 6;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.payments);
-            this.panel2.Controls.Add(this.orders);
-            this.panel2.Controls.Add(this.customers);
-            this.panel2.Controls.Add(this.books);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(335, 34);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(991, 552);
+            this.panel2.Size = new System.Drawing.Size(988, 552);
             this.panel2.TabIndex = 5;
             // 
-            // payments
+            // button1
             // 
-            this.payments.BackColor = System.Drawing.Color.MistyRose;
-            this.payments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.payments.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.payments.Location = new System.Drawing.Point(650, 126);
-            this.payments.Name = "payments";
-            this.payments.Size = new System.Drawing.Size(240, 80);
-            this.payments.TabIndex = 42;
-            this.payments.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.payments.TextChanged += new System.EventHandler(this.payments_TextChanged);
-            // 
-            // orders
-            // 
-            this.orders.BackColor = System.Drawing.Color.MistyRose;
-            this.orders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.orders.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orders.Location = new System.Drawing.Point(459, 126);
-            this.orders.Name = "orders";
-            this.orders.Size = new System.Drawing.Size(134, 80);
-            this.orders.TabIndex = 41;
-            this.orders.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.orders.TextChanged += new System.EventHandler(this.orders_TextChanged);
-            // 
-            // customers
-            // 
-            this.customers.BackColor = System.Drawing.Color.MistyRose;
-            this.customers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.customers.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customers.Location = new System.Drawing.Point(269, 126);
-            this.customers.Name = "customers";
-            this.customers.Size = new System.Drawing.Size(134, 80);
-            this.customers.TabIndex = 40;
-            this.customers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.customers.TextChanged += new System.EventHandler(this.customers_TextChanged);
-            // 
-            // books
-            // 
-            this.books.BackColor = System.Drawing.Color.MistyRose;
-            this.books.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.books.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.books.Location = new System.Drawing.Point(75, 126);
-            this.books.Name = "books";
-            this.books.Size = new System.Drawing.Size(134, 80);
-            this.books.TabIndex = 39;
-            this.books.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.books.TextChanged += new System.EventHandler(this.books_TextChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(706, 209);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(139, 28);
-            this.label13.TabIndex = 38;
-            this.label13.Text = "Total Revenue";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(284, 209);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(110, 28);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Customers";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(469, 209);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 28);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "Total Orders";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(85, 209);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 28);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Books Sold";
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(810, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 46);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Add User";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Brown;
-            this.label9.Location = new System.Drawing.Point(35, 45);
+            this.label9.Font = new System.Drawing.Font("Courier New", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.IndianRed;
+            this.label9.Location = new System.Drawing.Point(34, 45);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 40);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Welcome Back!";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(510, 300);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(450, 225);
-            this.dataGridView2.TabIndex = 7;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.label9.Size = new System.Drawing.Size(117, 38);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Users";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(57, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(451, 225);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.Size = new System.Drawing.Size(900, 350);
+            this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
@@ -287,7 +183,6 @@
             this.label4.Size = new System.Drawing.Size(126, 28);
             this.label4.TabIndex = 2;
             this.label4.Text = "Customers";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -300,7 +195,6 @@
             this.label2.Size = new System.Drawing.Size(86, 28);
             this.label2.TabIndex = 23;
             this.label2.Text = "Genres";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -313,7 +207,7 @@
             this.label1.Size = new System.Drawing.Size(77, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Books";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -328,18 +222,17 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Bookshop";
             // 
-            // Dashboard
+            // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1358, 621);
-            this.Controls.Add(this.mainpanel);
-            this.Name = "Dashboard";
-            this.Text = "Form2";
-            this.mainpanel.ResumeLayout(false);
+            this.Controls.Add(this.bookpanel);
+            this.Name = "Customers";
+            this.Size = new System.Drawing.Size(1358, 621);
+            this.Load += new System.EventHandler(this.Customers_Load);
+            this.bookpanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -348,9 +241,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel mainpanel;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -360,16 +253,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox books;
-        private System.Windows.Forms.TextBox payments;
-        private System.Windows.Forms.TextBox orders;
-        private System.Windows.Forms.TextBox customers;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel bookpanel;
     }
 }

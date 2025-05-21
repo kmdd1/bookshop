@@ -56,6 +56,7 @@
             this.bookpanel.Name = "bookpanel";
             this.bookpanel.Size = new System.Drawing.Size(1358, 621);
             this.bookpanel.TabIndex = 5;
+            this.bookpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bookpanel_Paint);
             // 
             // panel2
             // 
@@ -66,6 +67,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(989, 552);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label9
             // 
@@ -79,6 +81,7 @@
             this.label9.Size = new System.Drawing.Size(177, 38);
             this.label9.TabIndex = 23;
             this.label9.Text = "Payments";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // dataGridView1
             // 
@@ -107,6 +110,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(271, 552);
             this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 
@@ -131,6 +135,7 @@
             this.label7.Size = new System.Drawing.Size(113, 28);
             this.label7.TabIndex = 31;
             this.label7.Text = "Payments";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -142,6 +147,7 @@
             this.label6.Size = new System.Drawing.Size(99, 28);
             this.label6.TabIndex = 25;
             this.label6.Text = "Sign Out";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -166,6 +172,7 @@
             this.label4.Size = new System.Drawing.Size(126, 28);
             this.label4.TabIndex = 2;
             this.label4.Text = "Customers";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -178,6 +185,7 @@
             this.label2.Size = new System.Drawing.Size(86, 28);
             this.label2.TabIndex = 23;
             this.label2.Text = "Genres";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -204,6 +212,7 @@
             this.label3.Size = new System.Drawing.Size(144, 54);
             this.label3.TabIndex = 22;
             this.label3.Text = "Bookshop";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Payments
             // 

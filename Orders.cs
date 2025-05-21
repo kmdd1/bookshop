@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Excel = Microsoft.Office.Interop.Excel;
 
 
 namespace bookshop
@@ -27,17 +28,24 @@ namespace bookshop
             string query = @"
                 SELECT 
                     order_items.order_id AS `Order ID`,
-                    order_items.book_id AS book_id,           -- Hidden column for internal use
+                    order_items.book_id AS book_id,                
                     books.title AS `Book Title`,
                     order_items.quantity AS `Quantity`,
                     books.price AS `Unit Price`,
-                    (order_items.quantity * books.price) AS `Total Amount`
+                    (order_items.quantity * books.price) AS `Total Amount`,
+                    os.status_name AS `Order Status`,
+                    ps.status_name AS `Payment Status`
                 FROM 
                     order_items
                 JOIN 
                     books ON order_items.book_id = books.id
                 JOIN 
-                    orders ON order_items.order_id = orders.id";
+                    orders ON order_items.order_id = orders.id
+                JOIN 
+                    statuses os ON orders.order_status_id = os.id
+                JOIN 
+                    statuses ps ON orders.payment_status_id = ps.id";
+
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -185,27 +193,103 @@ namespace bookshop
 
         private void label6_Click(object sender, EventArgs e)
         {
+            SignIn dashboardForm = new SignIn();
+            dashboardForm.Show();
 
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                parentForm.Hide();
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
+            Orders orderControl = new Orders();
+            orderControl.Dock = DockStyle.Fill;
 
+            this.Controls.Clear();
+            this.Controls.Add(orderControl);
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
+            Customers customersControl = new Customers();
+            customersControl.Dock = DockStyle.Fill;
 
+            this.Controls.Clear();
+            this.Controls.Add(customersControl);
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
+            Genre genresControl = new Genre();
+            genresControl.Dock = DockStyle.Fill;
 
+            this.Controls.Clear();
+            this.Controls.Add(genresControl);
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("No data to export.");
+                return;
+            }
+
+            try
+            {
+                // Initialize Excel application
+                var excelApp = new Microsoft.Office.Interop.Excel.Application();
+                var workbook = excelApp.Workbooks.Add(Type.Missing);
+                var worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets[1];
+                worksheet.Name = "Order Report";
+
+                int colIndex = 0;
+
+                // Add column headers
+                for (int i = 0; i < dataGridView1.Columns.Count; i++)
+                {
+                    if (dataGridView1.Columns[i].Visible && dataGridView1.Columns[i].Name != "Edit" && dataGridView1.Columns[i].Name != "Delete")
+                    {
+                        colIndex++;
+                        worksheet.Cells[1, colIndex] = dataGridView1.Columns[i].HeaderText;
+                    }
+                }
+
+                // Add data rows
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    colIndex = 0;
+                    for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                    {
+                        if (dataGridView1.Columns[j].Visible && dataGridView1.Columns[j].Name != "Edit" && dataGridView1.Columns[j].Name != "Delete")
+                        {
+                            colIndex++;
+                            object value = dataGridView1.Rows[i].Cells[j].Value;
+                            worksheet.Cells[i + 2, colIndex] = value?.ToString() ?? "";
+                        }
+                    }
+                }
+
+                // Enable AutoFilter and AutoFit columns
+                Microsoft.Office.Interop.Excel.Range usedRange = worksheet.UsedRange;
+                usedRange.AutoFilter(1);
+                usedRange.Columns.AutoFit();
+
+                // Show Excel
+                excelApp.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Export failed: " + ex.Message);
+            }
         }
     }
 }

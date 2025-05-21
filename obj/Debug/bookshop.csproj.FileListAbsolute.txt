@@ -53,3 +53,11 @@ C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.BooksArchive.resources
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Orders.resources
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Payments.resources
 C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Paymentscs.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Customers.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.BooksLog.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.AddUser.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.EditUser.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.csproj.ResolveComReference.cache
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.AddGenre.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.Genre.resources
+C:\Users\Kim\Desktop\bookshop\bookshop\obj\Debug\bookshop.GenrePrice.resources

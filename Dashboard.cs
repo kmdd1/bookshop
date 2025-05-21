@@ -41,9 +41,10 @@ namespace bookshop
                 try
                 {
                     conn.Open();
-                    // Total books
-                    MySqlCommand cmd3 = new MySqlCommand("SELECT COUNT(*) FROM books", conn);
+                    //Total Books Sold
+                    MySqlCommand cmd3 = new MySqlCommand("SELECT total_books_sold()", conn);
                     books.Text = cmd3.ExecuteScalar().ToString();
+
 
                     // Total customers
                     MySqlCommand cmd1 = new MySqlCommand("SELECT COUNT(*) FROM customers", conn);
@@ -183,6 +184,48 @@ namespace bookshop
 
             mainpanel.Controls.Clear();
             mainpanel.Controls.Add(paymentControl);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Customers customersControl = new Customers();
+            customersControl.Dock = DockStyle.Fill;
+
+            mainpanel.Controls.Clear();
+            mainpanel.Controls.Add(customersControl);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Genre addgenreControl = new Genre();
+            addgenreControl.Dock = DockStyle.Fill;
+
+            mainpanel.Controls.Clear();
+            mainpanel.Controls.Add(addgenreControl);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboardForm = new Dashboard();
+            dashboardForm.Show();
+
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                parentForm.Hide();
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            SignIn dashboardForm = new SignIn();
+            dashboardForm.Show();
+
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                parentForm.Hide();
+            }
         }
     }
 }

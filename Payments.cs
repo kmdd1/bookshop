@@ -50,7 +50,6 @@ namespace bookshop
                     if (dataGridView1.Columns.Contains("Order ID"))
                         dataGridView1.Columns["Order ID"].Visible = true;
 
-                    // Add Edit button if not exists
                     if (!dataGridView1.Columns.Contains("Edit"))
                     {
                         DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
@@ -61,7 +60,6 @@ namespace bookshop
                         dataGridView1.Columns.Add(editButton);
                     }
 
-                    // Add Delete button if not exists
                     if (!dataGridView1.Columns.Contains("Delete"))
                     {
                         DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn();
@@ -145,6 +143,74 @@ namespace bookshop
 
 
         private void label5_Click(object sender, EventArgs e)
+        {
+            Orders orderControl = new Orders();
+            orderControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(orderControl);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Customers customersControl = new Customers();
+            customersControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(customersControl);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Payments paymentsControl = new Payments();
+            paymentsControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(paymentsControl);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            SignIn dashboardForm = new SignIn();
+            dashboardForm.Show();
+
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                parentForm.Hide();
+            }
+        }
+
+        private void bookpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Genre genresControl = new Genre();
+            genresControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(genresControl);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

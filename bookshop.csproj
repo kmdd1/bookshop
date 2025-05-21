@@ -104,6 +104,18 @@
     <Compile Include="AddBooks.Designer.cs">
       <DependentUpon>AddBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddGenre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGenre.Designer.cs">
+      <DependentUpon>AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Books.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,11 +128,41 @@
     <Compile Include="BooksArchive.Designer.cs">
       <DependentUpon>BooksArchive.cs</DependentUpon>
     </Compile>
+    <Compile Include="BooksLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksLog.Designer.cs">
+      <DependentUpon>BooksLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditBooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditBooks.Designer.cs">
       <DependentUpon>EditBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Genre.Designer.cs">
+      <DependentUpon>Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenrePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenrePrice.Designer.cs">
+      <DependentUpon>GenrePrice.cs</DependentUpon>
     </Compile>
     <Compile Include="Orders.cs">
       <SubType>UserControl</SubType>
@@ -199,14 +241,35 @@
     <EmbeddedResource Include="AddBooks.resx">
       <DependentUpon>AddBooks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddGenre.resx">
+      <DependentUpon>AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BooksArchive.resx">
       <DependentUpon>BooksArchive.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BooksLog.resx">
+      <DependentUpon>BooksLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditBooks.resx">
       <DependentUpon>EditBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genre.resx">
+      <DependentUpon>Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenrePrice.resx">
+      <DependentUpon>GenrePrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Orders.resx">
       <DependentUpon>Orders.cs</DependentUpon>
@@ -261,6 +324,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\history-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
