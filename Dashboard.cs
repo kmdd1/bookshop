@@ -166,5 +166,23 @@ namespace bookshop
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Orders orderControl = new Orders();
+            orderControl.Dock = DockStyle.Fill;
+
+            mainpanel.Controls.Clear();
+            mainpanel.Controls.Add(orderControl);
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Payments paymentControl = new Payments();
+            paymentControl.Dock = DockStyle.Fill;
+
+            mainpanel.Controls.Clear();
+            mainpanel.Controls.Add(paymentControl);
+        }
     }
 }

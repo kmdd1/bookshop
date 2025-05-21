@@ -122,6 +122,24 @@
     <Compile Include="EditBooks.Designer.cs">
       <DependentUpon>EditBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paymentscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paymentscs.Designer.cs">
+      <DependentUpon>Paymentscs.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecoveryPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +207,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditBooks.resx">
       <DependentUpon>EditBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paymentscs.resx">
+      <DependentUpon>Paymentscs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RecoveryPassword.resx">
       <DependentUpon>RecoveryPassword.cs</DependentUpon>

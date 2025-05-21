@@ -162,5 +162,63 @@ namespace bookshop
             BooksArchive archiveForm = new BooksArchive();
             archiveForm.ShowDialog();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bookpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Payments paymentControl = new Payments();
+            paymentControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(paymentControl);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Orders orderControl = new Orders();
+            orderControl.Dock = DockStyle.Fill;
+
+            this.Controls.Clear();
+            this.Controls.Add(orderControl);
+        }
     }
 }
